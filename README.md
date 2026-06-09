@@ -40,6 +40,16 @@ npm start
 
 El servidor corre en `http://localhost:3005`
 
+## Nota sobre la carpeta `db/`
+
+La carpeta `db/` está incluida en `.gitignore` y **no se sube a GitHub**. Esto es una buena práctica por las siguientes razones:
+
+- 🛡️ **Seguridad**: Puede contener datos sensibles de desarrollo/pruebas
+- 🔄 **Aislamiento**: Cada desarrollador necesita su propia instancia local de la base de datos
+- 🧹 **Limpieza**: Evita conflictos al tener diferentes estados de la BD entre colaboradores
+
+Al clonar el proyecto, la carpeta `db/` se creará automáticamente la primera vez que ejecute la aplicación.
+
 ## Rutas
 
 | Método | Ruta | Descripción |
